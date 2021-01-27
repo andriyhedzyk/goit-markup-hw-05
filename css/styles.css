@@ -214,6 +214,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0px;
+
   text-align: center;
 }
 .hero-title {
@@ -458,6 +459,7 @@ ul {
   width: 20px;
   height: 20px;
   fill: var(--backround-color);
+}
 
 /* Footer */
 .footer-container {
@@ -646,7 +648,8 @@ ul {
   overflow: hidden;
 }
 
-.portfolio-elements:hover .portfolio-action {
+.portfolio-link:hover .portfolio-action,
+.portfolio-link:focus .portfolio-action {
   transform: translatey(0);
 }
 
@@ -661,8 +664,8 @@ ul {
   transform: translatey(100%); 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-elements:hover .portfolio-action,
-.portfolio-elements:focus .portfolio-action  {
+.portfolio-link:hover .portfolio-action,
+.portfolio-link:focus .portfolio-action  {
   opacity: 1;
 }
 
