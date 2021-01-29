@@ -71,8 +71,6 @@ transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -102,11 +100,13 @@ ul {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-text-color);
 }
-.site-nav .link current {
+.site-nav .link.current {
    color: var(--accent-text-color);
 }
 
@@ -207,20 +207,16 @@ ul {
     url(../imges/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
-  height: 600px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0px;
-
   text-align: center;
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 200px;
   color: var(--backround-color);
   font-style: 400;
   font-weight: 900;
@@ -233,6 +229,10 @@ ul {
 }
 
 /* Feature */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -276,13 +276,15 @@ ul {
 }
 
 /* Work and Team*/
+.work {
+  padding-bottom: 94px;
+}
 .work-container {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-top: 0px;
-  padding-bottom: 94px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -308,7 +310,6 @@ ul {
   margin-bottom: 0;
   padding: 0;
 }
-
 .work-thumb {
   position: relative;
   height: 294px;
@@ -317,11 +318,9 @@ ul {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-
   position: absolute;
   bottom: 0;
 }
-
 .work-text {
   font-weight: 700;
   font-size: 14px;
@@ -344,11 +343,10 @@ ul {
 .team {
   background-color: var(--button-backround);
   align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .team .position {
   color: var(--text-color);
@@ -475,13 +473,6 @@ ul {
 }
 .footer {
   background-color: #2f303a;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  height: 252px;
-  padding-right: 15px;
-  padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -490,30 +481,47 @@ ul {
 }
 .contact-box {
   width: 231px;
-  margin-top: 20px;
-  margin-right: 0;
 }
 
 .studio-logo-footer {
   color: var(--backround-color);
 }
-
-.address {
+.address-title {
   color: var(--backround-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
-.footer .email,
 .footer .tel {
+  display: block;
+  font-style: normal;
   color: var(--foter-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 9px;
+  text-decoration: none;
 }
-
+.footer-email {
+  display: block;
+  font-style: normal;
+  color: var(--foter-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  margin-bottom: 9px;
+  text-decoration: none;
+}
+.address {
+  display: flex;
+  margin-bottom: auto;
+  margin-top: auto;
+  flex-direction: column;
+  align-items: baseline;
+}
 .connect {
   color: var(--backround-color);
   font-style: normal;
@@ -572,6 +580,8 @@ ul {
 /* PROJECTS */
 .projects {
   border-top: 1px solid #ececec;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .projects h2 {
   color: var(--primary-text-color);
@@ -682,6 +692,12 @@ ul {
   width: 44px;
   height: 44px;
   fill: red;
+}
+/* CLIENTS */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .clients-container {
   display: flex;
